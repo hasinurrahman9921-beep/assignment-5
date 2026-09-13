@@ -11,8 +11,8 @@ function App() {
   const [selectedStack, setSelectedStack] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetch('/technologies.json')
+ useEffect(() => {
+    fetch('./technologies.json')
       .then((res) => res.json())
       .then((data) => {
         setTechnologies(data);
